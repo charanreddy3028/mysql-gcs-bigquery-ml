@@ -1,0 +1,50 @@
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+.virtualenvs/
+
+# Airflow
+airflow.db
+logs
+dags/__pycache__
+plugins/__pycache__
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# GCP / Secrets
+keys/
+secrets/
+*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Git
+*.orig
+*.rej
+
+# Logs
+*.log
