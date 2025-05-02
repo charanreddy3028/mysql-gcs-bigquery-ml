@@ -1,0 +1,68 @@
+[2025-05-02T10:55:53.343+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T10:55:53.388+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gcs_silver_to_golden_bigquery.transform_and_upload_golden manual__2025-05-02T10:55:25.273162+00:00 [queued]>
+[2025-05-02T10:55:53.426+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gcs_silver_to_golden_bigquery.transform_and_upload_golden manual__2025-05-02T10:55:25.273162+00:00 [queued]>
+[2025-05-02T10:55:53.427+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-02T10:55:53.559+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_and_upload_golden> on 2025-05-02 10:55:25.273162+00:00
+[2025-05-02T10:55:53.571+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2347) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T10:55:53.576+0000] {standard_task_runner.py:63} INFO - Started process 2349 to run task
+[2025-05-02T10:55:53.577+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gcs_silver_to_golden_bigquery', 'transform_and_upload_golden', 'manual__2025-05-02T10:55:25.273162+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/gcs_silver_to_gold_layer_and_bigquery.py', '--cfg-path', '/tmp/tmph6e6l_ym']
+[2025-05-02T10:55:53.581+0000] {standard_task_runner.py:91} INFO - Job 62: Subtask transform_and_upload_golden
+[2025-05-02T10:55:53.719+0000] {task_command.py:426} INFO - Running <TaskInstance: gcs_silver_to_golden_bigquery.transform_and_upload_golden manual__2025-05-02T10:55:25.273162+00:00 [running]> on host dfbad22d9104
+[2025-05-02T10:55:54.351+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gcs_silver_to_golden_bigquery' AIRFLOW_CTX_TASK_ID='transform_and_upload_golden' AIRFLOW_CTX_EXECUTION_DATE='2025-05-02T10:55:25.273162+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-02T10:55:25.273162+00:00'
+[2025-05-02T10:55:54.352+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-02T10:55:54.354+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/context.py:320: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2025-05-02T10:55:54.355+0000] {gcs_silver_to_gold_layer_and_bigquery.py:25} INFO - Starting transformation at 20250502_105525
+[2025-05-02T10:55:54.356+0000] {gcs_silver_to_gold_layer_and_bigquery.py:29} INFO - Created temporary directory: /tmp/tmptul_7gdm
+[2025-05-02T10:55:54.368+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-05-02T10:55:54.372+0000] {base.py:84} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2025-05-02T10:55:55.715+0000] {gcs_silver_to_gold_layer_and_bigquery.py:38} INFO - Found files in silver layer: ['silver_layer/transformed_data_20250502_094703.csv']
+[2025-05-02T10:55:55.717+0000] {gcs_silver_to_gold_layer_and_bigquery.py:55} INFO - Selected latest file: silver_layer/transformed_data_20250502_094703.csv
+[2025-05-02T10:55:58.454+0000] {gcs.py:347} INFO - File downloaded to /tmp/tmptul_7gdm/transformed_data_20250502_094703.csv
+[2025-05-02T10:55:58.458+0000] {gcs_silver_to_gold_layer_and_bigquery.py:64} INFO - Downloaded silver_layer/transformed_data_20250502_094703.csv to /tmp/tmptul_7gdm/transformed_data_20250502_094703.csv
+[2025-05-02T10:55:58.755+0000] {gcs_silver_to_gold_layer_and_bigquery.py:89} INFO - Saved golden data to /tmp/tmptul_7gdm/golden_data_20250502_105525.csv
+[2025-05-02T10:56:00.322+0000] {gcs.py:560} INFO - File /tmp/tmptul_7gdm/golden_data_20250502_105525.csv uploaded to golden_layer/golden_data_20250502_105525.csv in mysql-to-gcs-bronze-layer bucket
+[2025-05-02T10:56:00.328+0000] {gcs_silver_to_gold_layer_and_bigquery.py:97} INFO - Uploaded golden_data_20250502_105525.csv to golden_layer/
+[2025-05-02T10:56:00.347+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-05-02T10:56:00.354+0000] {base.py:84} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2025-05-02T10:56:01.871+0000] {gcs_silver_to_gold_layer_and_bigquery.py:116} INFO - Dataset golden_layer already exists.
+[2025-05-02T10:56:01.884+0000] {gcs_silver_to_gold_layer_and_bigquery.py:159} ERROR - Error during transformation or upload: BigQueryHook.run_load() got an unexpected keyword argument 'job_config'
+Traceback (most recent call last):
+  File "/opt/airflow/dags/gcs_silver_to_gold_layer_and_bigquery.py", line 151, in silver_to_golden
+    bq_hook.run_load(
+  File "/home/airflow/.local/lib/python3.12/site-packages/deprecated/classic.py", line 285, in wrapper_function
+    return wrapped_(*args_, **kwargs_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BigQueryHook.run_load() got an unexpected keyword argument 'job_config'
+[2025-05-02T10:56:01.896+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-02T10:56:01.897+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/gcs_silver_to_gold_layer_and_bigquery.py", line 151, in silver_to_golden
+    bq_hook.run_load(
+  File "/home/airflow/.local/lib/python3.12/site-packages/deprecated/classic.py", line 285, in wrapper_function
+    return wrapped_(*args_, **kwargs_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BigQueryHook.run_load() got an unexpected keyword argument 'job_config'
+[2025-05-02T10:56:01.914+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=gcs_silver_to_golden_bigquery, task_id=transform_and_upload_golden, run_id=manual__2025-05-02T10:55:25.273162+00:00, execution_date=20250502T105525, start_date=20250502T105553, end_date=20250502T105601
+[2025-05-02T10:56:01.968+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 62 for task transform_and_upload_golden (BigQueryHook.run_load() got an unexpected keyword argument 'job_config'; 2349)
+[2025-05-02T10:56:02.049+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-05-02T10:56:02.101+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-02T10:56:02.201+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

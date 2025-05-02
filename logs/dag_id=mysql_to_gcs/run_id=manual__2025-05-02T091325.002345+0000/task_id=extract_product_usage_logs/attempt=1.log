@@ -1,0 +1,33 @@
+[2025-05-02T09:14:03.389+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T09:14:03.415+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mysql_to_gcs.extract_product_usage_logs manual__2025-05-02T09:13:25.002345+00:00 [queued]>
+[2025-05-02T09:14:03.433+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mysql_to_gcs.extract_product_usage_logs manual__2025-05-02T09:13:25.002345+00:00 [queued]>
+[2025-05-02T09:14:03.434+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-02T09:14:03.503+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_product_usage_logs> on 2025-05-02 09:13:25.002345+00:00
+[2025-05-02T09:14:03.512+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1101) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T09:14:03.515+0000] {standard_task_runner.py:63} INFO - Started process 1105 to run task
+[2025-05-02T09:14:03.515+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mysql_to_gcs', 'extract_product_usage_logs', 'manual__2025-05-02T09:13:25.002345+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/mysql_to_gcs_dag.py', '--cfg-path', '/tmp/tmp_123zfbz']
+[2025-05-02T09:14:03.517+0000] {standard_task_runner.py:91} INFO - Job 38: Subtask extract_product_usage_logs
+[2025-05-02T09:14:03.738+0000] {task_command.py:426} INFO - Running <TaskInstance: mysql_to_gcs.extract_product_usage_logs manual__2025-05-02T09:13:25.002345+00:00 [running]> on host dfbad22d9104
+[2025-05-02T09:14:03.955+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='mysql_to_gcs' AIRFLOW_CTX_TASK_ID='extract_product_usage_logs' AIRFLOW_CTX_EXECUTION_DATE='2025-05-02T09:13:25.002345+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-02T09:13:25.002345+00:00'
+[2025-05-02T09:14:03.957+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-02T09:14:03.959+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/context.py:320: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2025-05-02T09:14:03.959+0000] {mysql_to_gcs_dag.py:19} INFO - Starting extraction for table: product_usage_logs, timestamp: 20250502_091325
+[2025-05-02T09:14:03.971+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2025-05-02T09:14:04.039+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:263: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  return psql.read_sql(sql, con=conn, params=parameters, **kwargs)
+
+[2025-05-02T09:14:04.482+0000] {mysql_to_gcs_dag.py:32} INFO - Saved CSV to: /tmp/mysql_extract/product_usage_logs_data_20250502_091325.csv
+[2025-05-02T09:14:04.491+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-05-02T09:14:04.494+0000] {base.py:84} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2025-05-02T09:14:09.188+0000] {gcs.py:560} INFO - File /tmp/mysql_extract/product_usage_logs_data_20250502_091325.csv uploaded to bronze_layer/product_usage_logs_data_20250502_091325.csv in mysql-to-gcs-bronze-layer bucket
+[2025-05-02T09:14:09.189+0000] {mysql_to_gcs_dag.py:41} INFO - Uploaded product_usage_logs_data_20250502_091325.csv to GCS bucket.
+[2025-05-02T09:14:09.190+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-05-02T09:14:09.191+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-02T09:14:09.204+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=mysql_to_gcs, task_id=extract_product_usage_logs, run_id=manual__2025-05-02T09:13:25.002345+00:00, execution_date=20250502T091325, start_date=20250502T091403, end_date=20250502T091409
+[2025-05-02T09:14:09.792+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-02T09:14:09.822+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-02T09:14:10.090+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

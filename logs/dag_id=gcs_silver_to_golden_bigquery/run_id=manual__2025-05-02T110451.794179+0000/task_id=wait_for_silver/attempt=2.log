@@ -1,0 +1,14 @@
+[2025-05-02T11:05:05.350+0000] {task_command.py:426} INFO - Running <TaskInstance: gcs_silver_to_golden_bigquery.wait_for_silver manual__2025-05-02T11:04:51.794179+00:00 [success]> on host dfbad22d9104
+[2025-05-02T11:05:08.541+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gcs_silver_to_golden_bigquery' AIRFLOW_CTX_TASK_ID='wait_for_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-05-02T11:04:51.794179+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-02T11:04:51.794179+00:00'
+[2025-05-02T11:05:08.664+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-02T11:05:08.665+0000] {baseoperator.py:400} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2025-05-02T11:05:08.689+0000] {external_task.py:258} INFO - Poking for tasks ['transform_and_upload'] in dag gcs_bronze_to_silver on 2025-05-02T11:04:51.794179+00:00 ... 
+[2025-05-02T11:05:08.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags/gcs_bronze_to_silver_layer.py
+[2025-05-02T11:05:09.021+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/dagbag.py:351: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  loader.exec_module(new_module)
+
+[2025-05-02T11:05:10.975+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/session.py:79: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2025-05-02T11:05:11.019+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-02T11:05:11.232+0000] {taskinstance.py:2865} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE

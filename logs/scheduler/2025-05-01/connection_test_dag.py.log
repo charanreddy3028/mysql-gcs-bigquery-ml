@@ -1,0 +1,448 @@
+[2025-05-01T17:00:54.337+0000] {processor.py:161} INFO - Started process (PID=8385) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:00:54.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:00:54.345+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.344+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:00:54.392+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:00:54.677+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.676+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:test_gcp_conn
+[2025-05-01T17:00:54.757+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.756+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:test_gcp_conn
+[2025-05-01T17:00:54.824+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.823+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:test_gcp_conn
+[2025-05-01T17:00:54.826+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.825+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:00:54.849+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.848+0000] {dag.py:3118} INFO - Creating ORM DAG for test_gcp_conn
+[2025-05-01T17:00:54.850+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:00:54.850+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:00:54.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.597 seconds
+[2025-05-01T17:01:25.306+0000] {processor.py:161} INFO - Started process (PID=8445) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:01:25.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:01:25.314+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:01:25.313+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:01:25.343+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:01:25.378+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:01:25.377+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:01:25.405+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:01:25.404+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:01:25.479+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.186 seconds
+[2025-05-01T17:01:55.675+0000] {processor.py:161} INFO - Started process (PID=8504) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:01:55.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:01:55.713+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:01:55.712+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:01:55.847+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:01:55.939+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:01:55.938+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:01:55.996+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:01:55.995+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:01:56.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.743 seconds
+[2025-05-01T17:02:33.136+0000] {processor.py:161} INFO - Started process (PID=8563) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:02:33.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:02:33.574+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:02:33.574+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:02:35.906+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:02:35.989+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:02:35.988+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:02:36.092+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:02:36.091+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:02:36.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 3.727 seconds
+[2025-05-01T17:03:07.166+0000] {processor.py:161} INFO - Started process (PID=8622) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:03:07.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:03:07.218+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:03:07.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:03:07.766+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:03:07.882+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:03:07.881+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:03:07.971+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:03:07.970+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:03:08.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.969 seconds
+[2025-05-01T17:03:41.459+0000] {processor.py:161} INFO - Started process (PID=8681) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:03:41.470+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:03:41.475+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:03:41.474+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:03:41.832+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:03:41.912+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:03:41.911+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:03:42.037+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:03:42.037+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:03:42.208+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.770 seconds
+[2025-05-01T17:04:13.403+0000] {processor.py:161} INFO - Started process (PID=8742) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:04:13.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:04:13.433+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:04:13.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:04:13.730+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:04:13.825+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:04:13.824+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:04:13.915+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:04:13.915+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:04:14.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.689 seconds
+[2025-05-01T17:04:44.262+0000] {processor.py:161} INFO - Started process (PID=8800) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:04:44.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:04:44.268+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:04:44.267+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:04:44.303+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:04:44.344+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:04:44.343+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:04:44.371+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:04:44.370+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:04:44.450+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.205 seconds
+[2025-05-01T17:05:15.014+0000] {processor.py:161} INFO - Started process (PID=8859) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:05:15.016+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:05:15.024+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:05:15.023+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:05:15.079+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:05:15.145+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:05:15.144+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:05:15.211+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:05:15.210+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:05:15.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.338 seconds
+[2025-05-01T17:05:45.570+0000] {processor.py:161} INFO - Started process (PID=8918) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:05:45.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:05:45.579+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:05:45.579+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:05:45.607+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:05:45.654+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:05:45.653+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:05:45.711+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:05:45.710+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:05:45.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.352 seconds
+[2025-05-01T17:06:16.220+0000] {processor.py:161} INFO - Started process (PID=8977) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:06:16.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:06:16.235+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:06:16.233+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:06:16.329+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:06:16.435+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:06:16.434+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:06:16.502+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:06:16.502+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:06:16.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.512 seconds
+[2025-05-01T17:06:48.856+0000] {processor.py:161} INFO - Started process (PID=9036) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:06:48.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:06:48.908+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:06:48.907+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:06:49.773+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:06:49.958+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:06:49.957+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:06:50.057+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:06:50.057+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:06:50.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 1.940 seconds
+[2025-05-01T17:07:25.610+0000] {processor.py:161} INFO - Started process (PID=9093) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:07:25.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:07:25.622+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:07:25.621+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:07:25.681+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:07:25.764+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:07:25.763+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:07:25.837+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:07:25.836+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:07:25.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.381 seconds
+[2025-05-01T17:07:39.736+0000] {processor.py:161} INFO - Started process (PID=9126) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:07:39.739+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:07:39.762+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:07:39.761+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:07:39.841+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:07:39.894+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:07:39.893+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:07:39.926+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:07:39.926+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:07:40.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.358 seconds
+[2025-05-01T17:08:10.780+0000] {processor.py:161} INFO - Started process (PID=9185) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:08:10.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:08:10.787+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:08:10.787+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:08:10.852+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:08:10.966+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:08:10.963+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:08:11.053+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:08:11.052+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:08:11.533+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.776 seconds
+[2025-05-01T17:08:42.222+0000] {processor.py:161} INFO - Started process (PID=9243) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:08:42.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:08:42.237+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:08:42.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:08:42.310+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:08:42.427+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:08:42.426+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:08:42.488+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:08:42.488+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:08:43.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.906 seconds
+[2025-05-01T17:09:13.488+0000] {processor.py:161} INFO - Started process (PID=9303) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:09:13.490+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:09:13.492+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:09:13.492+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:09:13.516+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:09:13.541+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:09:13.540+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:09:13.561+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:09:13.560+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:09:13.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.232 seconds
+[2025-05-01T17:09:43.983+0000] {processor.py:161} INFO - Started process (PID=9361) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:09:43.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:09:43.992+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:09:43.991+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:09:44.098+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:09:44.191+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:09:44.190+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:09:44.217+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:09:44.217+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:09:44.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.340 seconds
+[2025-05-01T17:10:30.175+0000] {processor.py:161} INFO - Started process (PID=9427) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:10:30.188+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:10:30.191+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:10:30.191+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:10:30.437+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:10:30.495+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:10:30.494+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:10:30.533+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:10:30.533+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:10:30.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.501 seconds
+[2025-05-01T17:11:03.891+0000] {processor.py:161} INFO - Started process (PID=9474) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:11:03.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:11:03.903+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:11:03.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:11:04.104+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:11:04.176+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:11:04.176+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:11:04.236+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:11:04.236+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:11:04.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.541 seconds
+[2025-05-01T17:11:34.855+0000] {processor.py:161} INFO - Started process (PID=9527) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:11:34.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:11:34.910+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:11:34.909+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:11:38.804+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:11:38.913+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:11:38.912+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:11:39.103+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:11:39.103+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:11:39.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 4.427 seconds
+[2025-05-01T17:12:10.180+0000] {processor.py:161} INFO - Started process (PID=9587) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:12:10.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:12:10.189+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:12:10.189+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:12:10.234+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:12:10.303+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:12:10.303+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:12:10.384+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:12:10.383+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:12:10.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.476 seconds
+[2025-05-01T17:12:41.206+0000] {processor.py:161} INFO - Started process (PID=9646) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:12:41.213+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:12:41.231+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:12:41.230+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:12:41.348+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:12:41.439+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:12:41.438+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:12:41.511+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:12:41.511+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:12:41.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.473 seconds
+[2025-05-01T17:14:37.048+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:14:37.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:14:37.054+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:14:37.054+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:14:37.255+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:14:37.686+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:14:37.685+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:14:37.719+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:14:37.719+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:14:37.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.836 seconds
+[2025-05-01T17:15:08.670+0000] {processor.py:161} INFO - Started process (PID=135) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:15:08.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:15:08.684+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:15:08.683+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:15:08.853+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:15:09.815+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:15:08.951+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:15:09.862+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:15:09.862+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:15:10.075+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 1.426 seconds
+[2025-05-01T17:15:41.878+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:15:41.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:15:41.884+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:15:41.883+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:15:41.911+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:15:41.944+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:15:41.943+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:15:41.978+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:15:41.977+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:15:42.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.174 seconds
+[2025-05-01T17:16:12.884+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:16:12.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:16:12.892+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:16:12.891+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:16:12.972+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:16:13.114+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:16:13.101+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:16:13.209+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:16:13.209+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:16:13.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.741 seconds
+[2025-05-01T17:16:44.478+0000] {processor.py:161} INFO - Started process (PID=291) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:16:44.488+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:16:44.495+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:16:44.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:16:44.570+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:16:44.634+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:16:44.633+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:16:44.713+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:16:44.712+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:16:44.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.347 seconds
+[2025-05-01T17:17:15.259+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:17:15.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:17:15.267+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:17:15.266+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:17:15.390+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:17:15.529+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:17:15.528+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:17:15.658+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:17:15.657+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:17:16.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.898 seconds
+[2025-05-01T17:17:46.816+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:17:46.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:17:46.826+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:17:46.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:17:46.859+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:17:46.903+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:17:46.899+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:17:46.937+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:17:46.936+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:17:47.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.261 seconds
+[2025-05-01T17:18:17.289+0000] {processor.py:161} INFO - Started process (PID=468) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:18:17.296+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:18:17.312+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:18:17.302+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:18:17.378+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:18:17.440+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:18:17.434+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:18:17.480+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:18:17.479+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:18:17.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.367 seconds
+[2025-05-01T17:18:48.168+0000] {processor.py:161} INFO - Started process (PID=525) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:18:48.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:18:48.175+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:18:48.174+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:18:48.247+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:18:48.334+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:18:48.333+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:18:48.428+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:18:48.427+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:18:48.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.771 seconds
+[2025-05-01T17:19:21.931+0000] {processor.py:161} INFO - Started process (PID=583) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:19:21.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:19:21.981+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:19:21.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:19:22.277+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:19:22.392+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:19:22.391+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:19:22.499+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:19:22.486+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:19:22.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.896 seconds
+[2025-05-01T17:19:53.149+0000] {processor.py:161} INFO - Started process (PID=641) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:19:53.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:19:53.161+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:19:53.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:19:53.206+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:19:53.258+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:19:53.257+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:19:53.292+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:19:53.291+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:19:53.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.252 seconds
+[2025-05-01T17:20:25.024+0000] {processor.py:161} INFO - Started process (PID=695) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:20:25.072+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:20:25.093+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:20:25.092+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:20:25.271+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:20:25.389+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:20:25.388+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:20:25.489+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:20:25.488+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:20:25.654+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.649 seconds
+[2025-05-01T17:21:08.711+0000] {processor.py:161} INFO - Started process (PID=756) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:21:08.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:21:08.727+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:21:08.723+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:21:08.863+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:21:08.963+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:21:08.962+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:21:09.042+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:21:09.042+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:21:09.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.713 seconds
+[2025-05-01T17:21:39.965+0000] {processor.py:161} INFO - Started process (PID=816) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:21:39.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:21:39.972+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:21:39.972+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:21:40.022+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:21:40.068+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:21:40.068+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:21:40.095+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:21:40.095+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:21:40.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.214 seconds
+[2025-05-01T17:22:11.071+0000] {processor.py:161} INFO - Started process (PID=875) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:22:11.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:22:11.077+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:22:11.076+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:22:11.123+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:22:11.212+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:22:11.207+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:22:11.285+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:22:11.285+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:22:11.451+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.402 seconds
+[2025-05-01T17:22:41.635+0000] {processor.py:161} INFO - Started process (PID=935) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:22:41.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:22:41.641+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:22:41.641+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:22:41.673+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:22:41.713+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:22:41.712+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:22:41.738+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:22:41.738+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:22:41.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.224 seconds
+[2025-05-01T17:23:12.409+0000] {processor.py:161} INFO - Started process (PID=993) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:23:12.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:23:12.418+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:23:12.417+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:23:12.499+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:23:12.559+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:23:12.557+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:23:12.593+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:23:12.592+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:23:12.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.312 seconds
+[2025-05-01T17:23:43.592+0000] {processor.py:161} INFO - Started process (PID=1052) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:23:43.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:23:43.598+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:23:43.597+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:23:43.690+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:23:43.768+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:23:43.756+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:23:43.838+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:23:43.838+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:23:43.954+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.379 seconds
+[2025-05-01T17:24:14.330+0000] {processor.py:161} INFO - Started process (PID=1111) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:24:14.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:24:14.340+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:24:14.339+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:24:14.408+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:24:14.475+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:24:14.474+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:24:14.516+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:24:14.510+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:24:14.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.356 seconds
+[2025-05-01T17:24:45.015+0000] {processor.py:161} INFO - Started process (PID=1170) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:24:45.017+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:24:45.024+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:24:45.023+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:24:45.057+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:24:45.099+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:24:45.098+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:24:45.124+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:24:45.123+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:24:45.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.207 seconds
+[2025-05-01T17:25:15.452+0000] {processor.py:161} INFO - Started process (PID=1229) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:25:15.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:25:15.458+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:25:15.457+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:25:15.494+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:25:15.531+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:25:15.529+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:25:15.558+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:25:15.557+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:25:15.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.183 seconds
+[2025-05-01T17:25:45.765+0000] {processor.py:161} INFO - Started process (PID=1287) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:25:45.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:25:45.774+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:25:45.772+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:25:45.814+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:25:45.865+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:25:45.863+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:25:45.901+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:25:45.900+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:25:46.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.266 seconds
+[2025-05-01T17:26:16.516+0000] {processor.py:161} INFO - Started process (PID=1346) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:26:16.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:26:16.533+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:26:16.533+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:26:16.579+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:26:16.638+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:26:16.636+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:26:16.682+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:26:16.678+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:26:16.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.306 seconds
+[2025-05-01T17:26:47.201+0000] {processor.py:161} INFO - Started process (PID=1405) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:26:47.207+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:26:47.210+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:26:47.210+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:26:47.333+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:26:47.392+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:26:47.387+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:26:47.439+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:26:47.439+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:26:47.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.357 seconds
+[2025-05-01T17:27:18.118+0000] {processor.py:161} INFO - Started process (PID=1465) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:27:18.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:27:18.133+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:27:18.132+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:27:18.167+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:27:18.226+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:27:18.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:27:18.257+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:27:18.256+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:27:18.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.287 seconds
+[2025-05-01T17:27:48.900+0000] {processor.py:161} INFO - Started process (PID=1524) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:27:48.904+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:27:48.909+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:27:48.908+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:27:49.063+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:27:49.134+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:27:49.133+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:27:49.184+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:27:49.183+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:27:49.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.440 seconds
+[2025-05-01T17:28:22.246+0000] {processor.py:161} INFO - Started process (PID=1559) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:28:22.250+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:28:22.254+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:28:22.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:28:22.374+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:28:22.523+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:28:22.522+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:28:22.578+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:28:22.578+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:28:22.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.778 seconds
+[2025-05-01T17:28:57.107+0000] {processor.py:161} INFO - Started process (PID=1615) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:28:57.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:28:57.152+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:28:57.151+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:28:57.438+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:28:57.759+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:28:57.758+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:28:57.917+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:28:57.917+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:28:58.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 1.365 seconds
+[2025-05-01T17:29:28.832+0000] {processor.py:161} INFO - Started process (PID=1673) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:29:28.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:29:28.836+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:29:28.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:29:28.858+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:29:28.891+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:29:28.890+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:29:28.915+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:29:28.914+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:29:28.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.139 seconds
+[2025-05-01T17:29:59.304+0000] {processor.py:161} INFO - Started process (PID=1733) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:29:59.306+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:29:59.321+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:29:59.312+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:29:59.415+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:29:59.461+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:29:59.459+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:29:59.490+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:29:59.490+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:29:59.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.314 seconds
+[2025-05-01T17:30:31.144+0000] {processor.py:161} INFO - Started process (PID=1792) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:30:31.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:30:31.149+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:30:31.149+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:30:31.209+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:30:31.273+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:30:31.272+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:30:31.299+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:30:31.298+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:30:31.456+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.320 seconds
+[2025-05-01T17:31:13.822+0000] {processor.py:161} INFO - Started process (PID=1836) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:31:13.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:31:13.827+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:31:13.827+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:31:13.859+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:31:13.967+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:31:13.966+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:31:14.077+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:31:14.077+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:31:14.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.357 seconds
+[2025-05-01T17:31:44.316+0000] {processor.py:161} INFO - Started process (PID=1892) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:31:44.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:31:44.332+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:31:44.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:31:44.361+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:31:44.398+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:31:44.397+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:31:44.422+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:31:44.421+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:31:44.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.196 seconds
+[2025-05-01T17:32:17.969+0000] {processor.py:161} INFO - Started process (PID=1950) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:32:17.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:32:17.980+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:32:17.979+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:32:18.017+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:32:18.128+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:32:18.127+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:32:18.209+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:32:18.198+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:32:18.482+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.534 seconds
+[2025-05-01T17:32:50.074+0000] {processor.py:161} INFO - Started process (PID=2009) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:32:50.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:32:50.109+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:32:50.108+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:32:50.189+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:32:50.257+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:32:50.256+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:32:50.347+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:32:50.346+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:32:50.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.404 seconds
+[2025-05-01T17:33:21.150+0000] {processor.py:161} INFO - Started process (PID=2067) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:33:21.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:33:21.166+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:33:21.158+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:33:21.208+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:33:21.270+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:33:21.270+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:33:21.315+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:33:21.314+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:33:21.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.328 seconds
+[2025-05-01T17:33:51.895+0000] {processor.py:161} INFO - Started process (PID=2126) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:33:51.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:33:51.904+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:33:51.903+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:33:51.967+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:33:52.013+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:33:52.012+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:33:52.046+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:33:52.046+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:33:52.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 0.294 seconds
+[2025-05-01T17:34:27.677+0000] {processor.py:161} INFO - Started process (PID=2175) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:34:27.686+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:34:27.712+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:34:27.712+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:34:28.040+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:34:28.154+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:34:28.154+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:34:28.503+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:34:28.503+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:34:29.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 1.409 seconds
+[2025-05-01T17:35:01.218+0000] {processor.py:161} INFO - Started process (PID=2234) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:35:01.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:35:01.355+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:35:01.354+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:37:13.844+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:37:13.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T17:37:13.898+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:37:13.898+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:37:14.780+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T17:37:15.237+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:37:15.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T17:37:15.520+0000] {logging_mixin.py:188} INFO - [2025-05-01T17:37:15.520+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T17:37:15.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 2.133 seconds
+[2025-05-01T20:38:16.950+0000] {processor.py:161} INFO - Started process (PID=139) to work on /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T20:38:16.951+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/connection_test_dag.py for tasks to queue
+[2025-05-01T20:38:16.955+0000] {logging_mixin.py:188} INFO - [2025-05-01T20:38:16.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T20:38:16.997+0000] {processor.py:840} INFO - DAG(s) 'test_gcp_conn' retrieved from /opt/airflow/dags/connection_test_dag.py
+[2025-05-01T20:38:17.034+0000] {logging_mixin.py:188} INFO - [2025-05-01T20:38:17.033+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-01T20:38:17.060+0000] {logging_mixin.py:188} INFO - [2025-05-01T20:38:17.060+0000] {dag.py:3954} INFO - Setting next_dagrun for test_gcp_conn to None, run_after=None
+[2025-05-01T20:38:20.062+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/connection_test_dag.py took 3.124 seconds

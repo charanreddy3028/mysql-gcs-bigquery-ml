@@ -1,0 +1,41 @@
+[2025-05-02T11:05:03.644+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T11:05:03.809+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gcs_silver_to_golden_bigquery.wait_for_silver manual__2025-05-02T11:04:51.794179+00:00 [queued]>
+[2025-05-02T11:05:03.915+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gcs_silver_to_golden_bigquery.wait_for_silver manual__2025-05-02T11:04:51.794179+00:00 [queued]>
+[2025-05-02T11:05:03.965+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-05-02T11:05:04.157+0000] {taskinstance.py:2330} INFO - Executing <Task(ExternalTaskSensor): wait_for_silver> on 2025-05-02 11:04:51.794179+00:00
+[2025-05-02T11:05:04.306+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gcs_silver_to_golden_bigquery', 'wait_for_silver', 'manual__2025-05-02T11:04:51.794179+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/gcs_silver_to_gold_layer_and_bigquery.py', '--cfg-path', '/tmp/tmpy0k4v302']
+[2025-05-02T11:05:04.369+0000] {standard_task_runner.py:91} INFO - Job 63: Subtask wait_for_silver
+[2025-05-02T11:05:04.283+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2446) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T11:05:04.394+0000] {standard_task_runner.py:63} INFO - Started process 2455 to run task
+[2025-05-02T11:05:11.411+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-02T11:05:11.527+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-02T11:05:11.607+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-05-02T11:06:22.092+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T11:06:22.191+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gcs_silver_to_golden_bigquery.wait_for_silver manual__2025-05-02T11:04:51.794179+00:00 [queued]>
+[2025-05-02T11:06:22.234+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gcs_silver_to_golden_bigquery.wait_for_silver manual__2025-05-02T11:04:51.794179+00:00 [queued]>
+[2025-05-02T11:06:22.237+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-05-02T11:06:22.341+0000] {taskinstance.py:2330} INFO - Executing <Task(ExternalTaskSensor): wait_for_silver> on 2025-05-02 11:04:51.794179+00:00
+[2025-05-02T11:06:22.442+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2465) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T11:06:22.457+0000] {standard_task_runner.py:63} INFO - Started process 2474 to run task
+[2025-05-02T11:06:22.452+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gcs_silver_to_golden_bigquery', 'wait_for_silver', 'manual__2025-05-02T11:04:51.794179+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/gcs_silver_to_gold_layer_and_bigquery.py', '--cfg-path', '/tmp/tmp1vbwy3pc']
+[2025-05-02T11:06:22.477+0000] {standard_task_runner.py:91} INFO - Job 65: Subtask wait_for_silver
+[2025-05-02T11:06:22.773+0000] {task_command.py:426} INFO - Running <TaskInstance: gcs_silver_to_golden_bigquery.wait_for_silver manual__2025-05-02T11:04:51.794179+00:00 [running]> on host dfbad22d9104
+[2025-05-02T11:06:23.908+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gcs_silver_to_golden_bigquery' AIRFLOW_CTX_TASK_ID='wait_for_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-05-02T11:04:51.794179+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-02T11:04:51.794179+00:00'
+[2025-05-02T11:06:23.911+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-02T11:06:23.915+0000] {baseoperator.py:400} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2025-05-02T11:06:23.939+0000] {external_task.py:258} INFO - Poking for tasks ['transform_and_upload'] in dag gcs_bronze_to_silver on 2025-05-02T11:04:51.794179+00:00 ... 
+[2025-05-02T11:06:23.959+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/***/dags/gcs_bronze_to_silver_layer.py
+[2025-05-02T11:06:24.075+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/dagbag.py:351: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  loader.exec_module(new_module)
+
+[2025-05-02T11:06:25.632+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/utils/session.py:79: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2025-05-02T11:06:25.676+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-02T11:06:25.854+0000] {taskinstance.py:2865} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2025-05-02T11:06:25.954+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-02T11:06:26.037+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

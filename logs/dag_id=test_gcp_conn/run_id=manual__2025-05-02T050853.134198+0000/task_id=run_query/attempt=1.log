@@ -1,0 +1,58 @@
+[2025-05-02T05:09:13.094+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T05:09:13.172+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_gcp_conn.run_query manual__2025-05-02T05:08:53.134198+00:00 [queued]>
+[2025-05-02T05:09:13.189+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_gcp_conn.run_query manual__2025-05-02T05:08:53.134198+00:00 [queued]>
+[2025-05-02T05:09:13.191+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-05-02T05:09:13.336+0000] {taskinstance.py:2330} INFO - Executing <Task(BigQueryInsertJobOperator): run_query> on 2025-05-02 05:08:53.134198+00:00
+[2025-05-02T05:09:13.390+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1929) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T05:09:13.404+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_gcp_conn', 'run_query', 'manual__2025-05-02T05:08:53.134198+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/connection_test_dag.py', '--cfg-path', '/tmp/tmpnu53kh3g']
+[2025-05-02T05:09:13.495+0000] {standard_task_runner.py:91} INFO - Job 16: Subtask run_query
+[2025-05-02T05:09:13.472+0000] {standard_task_runner.py:63} INFO - Started process 1931 to run task
+[2025-05-02T05:09:14.040+0000] {task_command.py:426} INFO - Running <TaskInstance: test_gcp_conn.run_query manual__2025-05-02T05:08:53.134198+00:00 [running]> on host 34c72fae0f8a
+[2025-05-02T05:09:14.664+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_gcp_conn' AIRFLOW_CTX_TASK_ID='run_query' AIRFLOW_CTX_EXECUTION_DATE='2025-05-02T05:08:53.134198+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-02T05:08:53.134198+00:00'
+[2025-05-02T05:09:14.695+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-02T05:09:14.756+0000] {connection.py:274} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2025-05-02T05:09:15.291+0000] {base.py:84} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2025-05-02T05:09:15.346+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-02T05:09:15.371+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 2860, in execute
+    self.project_id = hook.project_id
+                      ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/common/hooks/base_google.py", line 397, in project_id
+    _, project_id = self.get_credentials_and_project_id()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/common/hooks/base_google.py", line 308, in get_credentials_and_project_id
+    credentials, project_id = get_credentials_and_project_id(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 371, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 245, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 295, in _get_credentials_using_key_path
+    credentials = google.oauth2.service_account.Credentials.from_service_account_file(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/oauth2/service_account.py", line 258, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/gcs-key.json'
+[2025-05-02T05:09:15.500+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=test_gcp_conn, task_id=run_query, run_id=manual__2025-05-02T05:08:53.134198+00:00, execution_date=20250502T050853, start_date=20250502T050913, end_date=20250502T050915
+[2025-05-02T05:09:15.757+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 16 for task run_query ([Errno 2] No such file or directory: '/opt/airflow/gcs-key.json'; 1931)
+[2025-05-02T05:09:15.853+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-05-02T05:09:16.065+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-02T05:09:16.190+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
