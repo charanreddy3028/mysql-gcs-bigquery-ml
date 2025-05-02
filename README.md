@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MySQL to BigQuery Pipeline with Airflow
 
 This repository contains an **end-to-end data pipeline** built using **Apache Airflow**, moving data from a **MySQL database** through **Google Cloud Storage (GCS)** to **BigQuery**.
@@ -39,3 +40,6 @@ Make sure [Docker](https://www.docker.com/products/docker-desktop/) is running, 
 
 ```bash
 docker-compose up -d
+=======
+# mysql-gcs-bigquery-pipeline
+>>>>>>> 0dc0e8d0e75a17cd0bab78f9cf75278cbaa39de2
