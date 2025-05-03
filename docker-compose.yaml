@@ -93,6 +93,8 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./keys/gcp_key.json:/opt/airflow/keys/gcp-key.json
+      - ./models:/opt/airflow/models
+      - ./scripts:/opt/airflow/scripts
     environment:
       <<: *airflow-common-env # <-- This merges the common environment variables
       # Increase Gunicorn timeouts from default 120 seconds to 300 seconds (5 minutes)
@@ -117,6 +119,9 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./keys/gcp_key.json:/opt/airflow/keys/gcp-key.json
+      - ./models:/opt/airflow/models
+      - ./scripts:/opt/airflow/scripts
+    
 
   airflow-worker:
     <<: *airflow-common
@@ -142,6 +147,9 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./keys/gcp_key.json:/opt/airflow/keys/gcp-key.json
+      - ./models:/opt/airflow/models
+      - ./scripts:/opt/airflow/scripts
+    
 
   airflow-triggerer:
     <<: *airflow-common

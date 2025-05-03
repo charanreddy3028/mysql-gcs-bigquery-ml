@@ -59,11 +59,7 @@ print("✅ Model saved to churn_model.pkl")
 
 # Upload predictions (optional)
 X_test['predicted_churn'] = y_pred
-X_test['customer_id'] = df.loc[X_test.index,'customer_id']
-
-columns_for_upload = ['customer_id','predicted_churn']
-test_with_customer = X_test[columns_for_upload]
 job_config = bigquery.LoadJobConfig(write_disposition="WRITE_TRUNCATE")
 table_id = "bigquery-email-454109.golden_layer.weekly_churn_predictions"
-client.load_table_from_dataframe(test_with_customer, table_id, job_config=job_config)
+client.load_table_from_dataframe(X_test[['predicted_churn']], table_id, job_config=job_config)
 print("✅ Predictions uploaded to BigQuery.")

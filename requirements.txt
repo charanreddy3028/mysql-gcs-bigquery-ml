@@ -1,0 +1,14 @@
+apache-airflow[gcp]
+google-cloud-bigquery
+pandas
+scikit-learn
+jupyter
+notebook
+nbconvert
+ipykernel
+joblib
+matplotlib
+seaborn
+xgboost
+cloudpickle 
+papermill    
