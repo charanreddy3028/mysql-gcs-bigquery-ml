@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)) + '/../scripts')
 # Import prediction function
 from predict_churn import predict_churn
 
-# Set environment variables
+# Set environment variable for GCP key (optional; override in Docker Compose for production)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/opt/airflow/keys/gcp_key.json"
 
 default_args = {
@@ -32,5 +32,3 @@ run_prediction = PythonOperator(
     python_callable=predict_churn,
     dag=dag,
 )
-
-run_prediction

@@ -11,4 +11,5 @@ matplotlib
 seaborn
 xgboost
 cloudpickle 
-papermill    
+papermill 
+joblib>=1.4.2   
