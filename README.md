@@ -1,49 +1,101 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# MySQL to BigQuery Pipeline with Airflow
+📌 Project Overview
+This project implements a scalable, automated data pipeline that extracts data from MySQL, transforms it through three logical layers (Bronze → Silver → Gold), and integrates with Google Cloud Storage and BigQuery. It enables both cloud-based querying and local analytics, including daily machine learning predictions.
 
-This repository contains an **end-to-end data pipeline** built using **Apache Airflow**, moving data from a **MySQL database** through **Google Cloud Storage (GCS)** to **BigQuery**.
+🔁 Data Flow Architecture
+pgsql
+Copy
+Edit
+             ┌──────────┐
+             │  MySQL   │
+             └────┬─────┘
+                  ▼
+         ┌────────────────┐
+         │ Bronze Layer   │  → Raw data from MySQL stored in GCS
+         └────────────────┘
+                  ▼
+         ┌────────────────┐
+         │ Silver Layer   │  → Cleaned/validated data stored in GCS
+         └────────────────┘
+                  ▼
+         ┌────────────────┐
+         │ Gold Layer     │  → Final transformed data stored in GCS
+         └────────────────┘
+                  ▼
+         ┌────────────────┐
+         │ BigQuery       │  ← Only Gold Layer is loaded
+         └────────────────┘
+                  ▼
+         ┌──────────────────────┐
+         │ Local System         │  → Advanced analytics & ML training
+         └──────────────────────┘
+                  ▼
+         ┌────────────────┐
+         │ Predictions     │  → Sent back to BigQuery
+         └────────────────┘
 
-It demonstrates:
-- Extracting data from MySQL
-- Uploading to GCS (Bronze Layer)
-- Transforming and joining data (Silver Layer)
-- Aggregating and loading into BigQuery (Golden Layer)
+                 [ Orchestrated Daily via Airflow DAGs ]
+🛠️ Tech Stack
+Layer        Tool/Service
+Data Source        MySQL
+Storage        Google Cloud Storage
+Data Warehouse        Google BigQuery
+Workflow Engine        Apache Airflow
+ML/Analytics        Python (Local)
 
----
+📈 Key Features
+✅ Modular architecture using Bronze, Silver, and Gold layers
 
-## 📁 Files Included
+☁️ Scalable cloud storage and compute using GCS & BigQuery
 
-| File | Description |
-|------|-------------|
-| `dags/mysql_to_gcs.py` | Extracts data from MySQL and uploads to GCS Bronze Layer |
-| `dags/gcs_bronze_to_silver.py` | Joins tables and transforms to Silver Layer |
-| `dags/gcs_silver_to_golden_bigquery.py` | Aggregates customer metrics and loads to BigQuery |
-| `insert_data.py` | Script to insert sample data into MySQL |
+🔁 Automated ETL and model training using Airflow DAGs
 
----
+🧠 Local system used for ML pipelines & advanced analytics
 
-## 🛠️ Technologies Used
+📤 Daily predictions pushed back to BigQuery
 
-- Apache Airflow (via Docker)
-- MySQL
-- Google Cloud Storage (GCS)
-- Google BigQuery
-- Python (Pandas, Airflow Hooks)
+🚀 Getting Started
+Prerequisites
+Google Cloud Project (GCS & BigQuery enabled)
 
----
+Apache Airflow setup (locally or via Cloud Composer)
 
-## 🧪 Local Setup Instructions
+Python 3.8+ environment for local ML processing
 
-### 1. Start Airflow via Docker
+MySQL access credentials
 
-Make sure [Docker](https://www.docker.com/products/docker-desktop/) is running, then:
+Setup Steps
+Clone the repository
 
-```bash
-docker-compose up -d
-=======
-# mysql-gcs-bigquery-pipeline
->>>>>>> 0dc0e8d0e75a17cd0bab78f9cf75278cbaa39de2
-=======
-# mysql-gcs-bigquery-ml
->>>>>>> d15a0788215566ce900b79078adaea5c2e06819d
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+Configure MySQL and GCP credentials
+
+Add your credentials in the .env or config.py as needed.
+
+Set up DAGs in Airflow
+
+Place DAG scripts in your Airflow /dags folder.
+
+Trigger or schedule DAGs.
+
+Run local analytics
+
+bash
+Copy
+Edit
+python analytics/predict.py
+View results in BigQuery dashboard or Looker Studio
+
+📅 Automation
+All pipeline steps are orchestrated via Airflow DAGs, which:
+
+Extract data from MySQL daily
+
+Stage and transform data into GCS
+
+Load Gold Layer to BigQuery
+
+Trigger local scripts for ML training & predictions
