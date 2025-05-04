@@ -20,7 +20,7 @@
 ---
 x-airflow-common:
   &airflow-common
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}
+  image: ${AIRFLOW_IMAGE_NAME:-custom-airflow:latest}
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
@@ -50,11 +50,15 @@ services:
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: airflow
+      POSTGRES_USER: airflow  # Superuser for Airflow metadata
       POSTGRES_PASSWORD: airflow
-      POSTGRES_DB: airflow
+      POSTGRES_DB: airflow    # Airflow metadata database
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d  # Custom init scripts
+      - ./init-scripts/create_customer_data.sql:/docker-entrypoint-initdb.d/01-create-customer-data.sql  # Explicit ordering
+    ports:
+      - "5432:5432"  # Expose PostgreSQL port
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 10s
@@ -95,6 +99,7 @@ services:
       - ./keys/gcp_key.json:/opt/airflow/keys/gcp-key.json
       - ./models:/opt/airflow/models
       - ./scripts:/opt/airflow/scripts
+      - ./requirements.txt:/opt/airflow/requirements.txt
     environment:
       <<: *airflow-common-env # <-- This merges the common environment variables
       # Increase Gunicorn timeouts from default 120 seconds to 300 seconds (5 minutes)
@@ -121,6 +126,7 @@ services:
       - ./keys/gcp_key.json:/opt/airflow/keys/gcp-key.json
       - ./models:/opt/airflow/models
       - ./scripts:/opt/airflow/scripts
+      - ./requirements.txt:/opt/airflow/requirements.txt
     
 
   airflow-worker:
@@ -149,6 +155,7 @@ services:
       - ./keys/gcp_key.json:/opt/airflow/keys/gcp-key.json
       - ./models:/opt/airflow/models
       - ./scripts:/opt/airflow/scripts
+      - ./requirements.txt:/opt/airflow/requirements.txt
     
 
   airflow-triggerer:

@@ -1,6 +1,6 @@
 from airflow import DAG
 from airflow.providers.google.cloud.hooks.gcs import GCSHook
-from airflow.providers.mysql.hooks.mysql import MySqlHook
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
@@ -8,40 +8,59 @@ import os
 import logging
 
 # Set up basic logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)  # Changed to DEBUG level
 
 DAG_ID = 'mysql_to_gcs'
 
 def extract_and_upload(table_name, **kwargs):
     try:
+        logging.debug(f"[START] Task for table: {table_name}")
+
         # Use execution_date to generate a short timestamp
         execution_time = kwargs['ds_nodash'] + '_' + kwargs['execution_date'].strftime('%H%M%S')
         logging.info(f"Starting extraction for table: {table_name}, timestamp: {execution_time}")
 
-        # MySQL Hook
-        mysql_hook = MySqlHook(mysql_conn_id='mysql_default')
-        sql = f"SELECT * FROM {table_name}"
-        df = mysql_hook.get_pandas_df(sql)
+        # Step 1: Connect to PostgreSQL
+        logging.debug("[CONNECTING] To PostgreSQL database...")
+        pg_hook = PostgresHook(postgres_conn_id='postgres_customer_data')
+        conn = pg_hook.get_conn()
+        logging.debug("[CONNECTION SUCCESS] PostgreSQL connection established.")
 
-        # Local file handling
-        tmp_dir = '/tmp/mysql_extract'
+        # Step 2: Query data
+        logging.debug(f"[QUERYING] Data from table: {table_name}")
+        sql = f"SELECT * FROM {table_name}"
+        df = pg_hook.get_pandas_df(sql)
+        logging.info(f"[QUERY SUCCESS] Retrieved {len(df)} rows from table '{table_name}'")
+
+        # Step 3: Save to local CSV
+        tmp_dir = '/tmp/postgres_extract'
+        logging.debug(f"[SAVING FILE] Preparing directory: {tmp_dir}")
         os.makedirs(tmp_dir, exist_ok=True)
+
         file_name = f"{table_name}_data_{execution_time}.csv"
         local_path = os.path.join(tmp_dir, file_name)
+        logging.debug(f"[WRITING CSV] Saving to: {local_path}")
         df.to_csv(local_path, index=False)
-        logging.info(f"Saved CSV to: {local_path}")
+        logging.info(f"[CSV SAVED] File saved at: {local_path}")
 
-        # Upload to GCS
+        # Step 4: Upload to GCS
+        logging.debug("[UPLOADING TO GCS] Starting upload process...")
         gcs_hook = GCSHook(gcp_conn_id='google_cloud_default')
         gcs_hook.upload(
             bucket_name='mysql-to-gcs-bronze-layer',
             object_name=f"bronze_layer/{file_name}",
             filename=local_path
         )
-        logging.info(f"Uploaded {file_name} to GCS bucket.")
+        logging.info(f"[UPLOAD SUCCESS] Uploaded {file_name} to GCS bucket.")
+
+        # Clean up (optional)
+        os.remove(local_path)
+        logging.debug(f"[CLEANUP] Temporary file removed: {local_path}")
+
+        logging.debug(f"[END] Successfully completed task for table: {table_name}")
 
     except Exception as e:
-        logging.error(f"Error in extract_and_upload: {e}", exc_info=True)
+        logging.error(f"[ERROR] Error occurred in extract_and_upload: {str(e)}", exc_info=True)
         raise
 
 
@@ -50,8 +69,8 @@ with DAG(
     start_date=datetime(2024, 1, 1),
     schedule_interval='@daily',
     catchup=False,
-    tags=['mysql', 'gcs'],
-    max_active_runs=3,  # Allow multiple concurrent runs if needed
+    tags=['postgres', 'gcs'],
+    max_active_runs=3,
 ) as dag:
 
     extract_customers = PythonOperator(

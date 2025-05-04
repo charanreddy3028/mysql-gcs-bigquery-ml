@@ -2,13 +2,15 @@ from google.cloud import bigquery
 import pandas as pd
 import joblib
 import os
+from pathlib import Path
 
 # Set path to GCP key
 KEY_PATH = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+MODEL_PATH = Path(__file__).parent / "churn_model.pkl"
 
 # Fallback to default if not set
 if not KEY_PATH:
-    KEY_PATH = "/opt/airflow/keys/gcp_key.json"
+    KEY_PATH = "/opt/airflow/keys/gcp-key.json"
     print(f"⚠️ GOOGLE_APPLICATION_CREDENTIALS not set. Using default: {KEY_PATH}")
 else:
     print(f"✅ Using GOOGLE_APPLICATION_CREDENTIALS from environment: {KEY_PATH}")
@@ -34,7 +36,7 @@ def predict_churn():
 
     # Load model
     try:
-        model = joblib.load("churn_model.pkl")
+        model = joblib.load(MODEL_PATH)
         print("✅ Model loaded")
     except Exception as e:
         raise FileNotFoundError(f"❌ Failed to load model file: {e}")

@@ -71,8 +71,8 @@ product_usage_df = pd.DataFrame(product_usage_logs)
 # # Insert into MySQL
 # engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}')
 
-engine = create_engine("mysql+pymysql://root:Charan%400897@localhost:3306/customer_data")
-
+# engine = create_engine("mysql+pymysql://root:Charan%400897@localhost:3306/customer_data")
+engine = create_engine("postgresql+psycopg2://root:Charan%400897@localhost:5432/customer_data")
 
 
 customers.to_sql('customers', con=engine, index=False, if_exists='replace')

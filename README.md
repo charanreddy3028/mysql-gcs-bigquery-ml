@@ -112,3 +112,14 @@ Load Gold Layer to BigQuery
 
 Trigger local scripts for ML training & predictions
 
+
+-------------------------------------
+Installed the joblib inside the containers
+docker exec -it airflow-docker-airflow-scheduler-1 bash
+#bash pip install joblib
+
+docker exec -it airflow-docker-airflow-webserver-1 bash
+#bash pip install joblib
+docker exec -it airflow-docker-airflow-worker-1 bash
+
+

@@ -6,10 +6,9 @@ jupyter
 notebook
 nbconvert
 ipykernel
-joblib
+joblib==1.4.2
 matplotlib
 seaborn
 xgboost
 cloudpickle 
 papermill 
-joblib>=1.4.2   
